@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+   <head>
+      <title>{{ title }}</title>
+   </head>
+   <body>
+      <h1>Enjoy the final exam. of Sensor Programming!</h1>
+      <h2>The current date and time on the server is: {{ time }}</h2>
+	  <h2>The current temperture of this room is: {{ temp }} degree</h2>
+      {% if msg %}
+		<BR><BR> <h2> &nbsp;&nbsp;&nbsp;&nbsp;{{msg}}</h2>
+      {% else %}
+		<BR><BR> <h2> &nbsp;&nbsp;&nbsp;&nbsp;Temp. data was not received...!!!</h2>
+      {% endif %}
+   </body>
+</html>
